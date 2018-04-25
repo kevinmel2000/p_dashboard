@@ -1,0 +1,17 @@
+{
+	"description" : "The CodeIgniter Application with Composer",
+	"require": {
+		"php": ">=7.0.0",
+		"codeigniter/framework": "3.1.2",
+		"php-http/guzzle6-adapter": "1.1.1",
+		"vlucas/phpdotenv": "2.4.0",
+		"vanilla/garden-schema": "1.7.5",
+		"woohoolabs/yang": "1.2",
+		"google/recaptcha": "~1.1",
+		"fproject/php-jwt": "^4.0"
+	},
+	"require-dev": {
+		"mikey179/vfsStream": "1.1.*",
+		"squizlabs/php_codesniffer": "3.*"
+	}
+}

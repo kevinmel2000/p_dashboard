@@ -1,0 +1,17 @@
+version: '2'
+services:
+  php-apache:
+    image: webdevops/php-apache-dev
+    container_name: psdkp-dashboard
+    volumes:
+      - ./:/app
+    ports:
+      - 80:80
+    environment:
+      WEB_DOCUMENT_ROOT: /app/public
+      WEB_ALIAS_DOMAIN: psdkp.local
+      PHP_DEBUGGER: xdebug
+      XDEBUG_REMOTE_CONNECT_BACK: 0
+      XDEBUG_REMOTE_ENABLE: 1
+      XDEBUG_REMOTE_AUTOSTART: 1
+      
